@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Quicksand:wght@300&display=swap');
+body{
+  text-align: center;
+  background: linear-gradient(#333,#222,black);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-shadow: 0 0 20px grey;
+  font-family: "Quicksand", sans-serif;
+}
+.menuButton{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.menuButton:active{
+  border: 2px solid rgba(0,255,255,0.4);
+  padding: 2px;
+  top: 6px;
+  right: 6px;
+  animation: rotateFilter 2s infinite alternate-reverse;
+}
+@keyframes rotateFilter{
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+  filter: hue-rotate(360deg);
+  }
+}
+.menu{
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(4px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 0%;
+  height: 100%;
+  transition: 0.4s;
+  overflow: hidden;
+}
+.aButton{
+  color: white;
+  font-size: 25px;
+  width: 100%;
+  text-shadow: 0 0 10px white;
+  text-decoration: none;
+  outline: none;
+}
